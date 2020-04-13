@@ -2,7 +2,6 @@
 using namespace std;
 vector <int> v[1000];
 int vist[1000];
-int parent[1000];
 int dist[1000];
 bool ok = false;
 
@@ -26,7 +25,7 @@ void bfs(int node)
         }
     }
 }
-bool dfs(int node)
+void dfs(int node)
 {
     vist[node]=1;
 //    cout << "node : " << node << endl;
@@ -64,7 +63,6 @@ int main()
     int start;
 //    cin >> start;
     dfs(1);
-//    cout << ok << endl;
     if(ok) cout << "cycle found." << endl;
     else cout << "cycle not found." << endl;
 }
