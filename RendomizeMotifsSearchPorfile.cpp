@@ -29,6 +29,7 @@ int main(){
            else if(p[j][i] =='g') c++;
            else d++;
         }
+          cout << "A="<<a << ", C=" << b << ", G=" << c << ", T=" << d << endl;
         float x = float(t);
         aa[0][i] = a/x;
         aa[1][i] = b/x;
